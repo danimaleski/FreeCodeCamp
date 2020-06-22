@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Pridi:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form - As Crônicas de Nárnia</h1>
+        <p id="description">Um formulário sobre <i><b>"As Crônicas de Nárnia"</b></i></p>
+
+
+        <form action="/survey-form" id="survey-form">
+            <label for="nome" id="name-label">Nome</label>
+            <input type="text" id="name" name="nome" placeholder="Seu nome">
+            <br>
+            <label for="emails" id="email-label">Email</label>
+            <input type="email" id="email" name="emails" placeholder="Seu email">
+            <br>
+            <label for="age" id="number-label">Idade</label>
+            <input type="number" id="number" name="age" min="1" max="100" placeholder="Sua idade">
+            <br>
+
+            <label for="livros">Qual seu livro favorito?</label>
+            <select name="livros" id="dropdown">
+                <option value="primeiro">O Sobrinho do Mago</option>
+                <option value="segundo">O Leão, a Feiticeira e o Guarda-Roupa</option>
+                <option value="terceiro">O Cavalo e seu Menino</option>
+                <option value="quarto">Príncipe Caspian</option>
+                <option value="quinto">A Viagem do Peregrino da Alvorada</option>
+                <option value="sexto">A Cadeira de Prata</option>
+                <option value="sétimo">A Última Batalha</option>
+            </select>
+            <br>
+
+            <label for="preference">Qual sua preferência de leitura?</label>
+            <br>
+            <input type="radio" name="ordem" value="cronologica" checked>
+            <label for="cronologica">Ordem Cronológica</label><br>
+            <input type="radio" name="ordem" value="publicacao">
+            <label for="publicacao">Ordem de Publicação</label>
+            <br>
+            <br>
+
+            <label for="filmes">Qual filme você já viu?</label>
+            <br>
+            <input type="checkbox" name="movies" id="first" value="first">
+            <label for="first">O Leão, a Feiticeira e o Guarda-Roupa</label><br>
+            <input type="checkbox" name="movies" id="second" value="second">
+            <label for="second">Príncipe Caspian</label><br>
+            <input type="checkbox" name="movies" id="third" value="third">
+            <label for="third">A Viagem do Peregrino da Alvorada</label>
+            <br>
+            <br>
+
+            <label for="comentarios">Adicione um comentário sobre o assunto:</label>
+            <textarea name="comments" id="comments"></textarea>
+            <br>
+            <button id="submit">ENVIAR</button>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
